@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ZONA DE TRABAJO -->
+
+    <!-- Texto -->
+    <h1>Titulo principal</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+
+    <p>HOLA SOY un parrafo generado por una etiqueta p </p>
+
+    <a href="https://google.com">Google</a>
+    <a href="mailto:nribero@codingdojo.cl">Contactar</a>
+
+    <!-- imagen -->
+    <img src="https://media.licdn.com/dms/image/C4D03AQGrcxUWrL6A7Q/profile-displayphoto-shrink_400_400/0/1649250092691?e=2147483647&v=beta&t=yMiNFAR4Z0CF8nI-v_Cse7pB50fvaY5iqClSprBqtsM"
+        alt="Imagen de perfil">
+    <img src="./mario bros.png" alt="mario">
+
+    <!-- Listas -->
+
+    <ul>
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ul>
+
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ul>
+        </li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <!-- Tablas -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Elemento A1</td>
+                <td>Elemento A2</td>
+                <td>Elemento A3</td>
+            </tr>
+            <tr>
+                <td>Elemento B1</td>
+                <td>Elemento B2</td>
+                <td>Elemento B3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="" method="get">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <br>
+        <label for="job">Seleccione Trabajo</label>
+        <select name="trabajo" id="job">
+            <option value="Front">FrontEnd</option>
+            <option value="Back">Backend</option>
+        </select>
+        <br>
+        <label for="azul">Azul</label>
+        <input type="checkbox" id="azul" name="color" value="azul">
+        <label for="verde">Verde</label>
+        <input type="checkbox" id="verde" name="color" value="verde">
+        <label for="rojo">Rojo</label>
+        <input type="checkbox" id="rojo" name="color" value="rojo">
+        <label for="negro">Negro</label>
+        <input type="checkbox" id="negro" name="color" value="negro">
+        <label for="morado">Morado</label>
+        <input type="checkbox" id="morado" name="color" value="morado">
+        <br>
+        <textarea name="description" rows="4" maxlength="27" cols="18"></textarea>
+        <input type="hidden" name="id" value="7">
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+</body>
+
+</html>
