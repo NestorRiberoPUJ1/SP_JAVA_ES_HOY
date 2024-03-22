@@ -1,0 +1,64 @@
+/* Reset de estilo */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Selector de etiqueta */
+body {
+    background-color: dodgerblue;
+    padding: 16px;
+    /* background-image: url("../Marzo-19/mario_bros.png"); */
+}
+
+header {
+    background-color: gold;
+}
+
+main {
+    background-color: #fd8b00;
+}
+
+footer {
+    background-color: rgb(208, 38, 123);
+}
+
+section {
+    border: 4px solid black;
+    margin-top: 8px;
+    padding: 4px;
+}
+
+ul {
+    padding-left: 16px;
+}
+
+h4 {
+    color: red;
+}
+
+/* Selector de clase */
+.section_title {
+    color: white
+}
+
+.bullet_input {
+    margin: 4px 0px;
+    background-color: purple;
+    padding: 8px;
+    width: fit-content;
+    border-radius: 8px;
+    border: 4px solid white;
+}
+
+/* Selector de id */
+
+#submit_btn{
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: rgb(96, 96, 96);
+    color:white;
+    border: 4px solid white
+}
