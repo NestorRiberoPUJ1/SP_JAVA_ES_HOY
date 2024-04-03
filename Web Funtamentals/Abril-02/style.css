@@ -1,0 +1,26 @@
+button {
+    font-weight: bolder;
+}
+
+.btn {
+    margin: 8px;
+    min-width: 96px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.btn-red {
+    background-color: lightcoral;
+    color: white;
+    border: 2px solid red;
+}
+
+.btn-blue {
+    background-color: lightblue;
+    color: white;
+    border: 2px solid dodgerblue;
+}
+
+#btnSend {
+    text-decoration: underline;
+}
