@@ -1,0 +1,14 @@
+.btnCelula {
+    padding: 4px 8px;
+    border-radius: 8px;
+    border-style:dotted;
+    background-color: lightgreen;
+}
+
+
+table{
+    background-color: black;
+}
+td{
+    background-color: white;
+}
