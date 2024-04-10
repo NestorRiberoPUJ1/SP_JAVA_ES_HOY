@@ -3,3 +3,15 @@
     margin: 0px;
     outline: 2px dashed black;
 }
+
+
+header{
+    height: 48px;
+}
+
+nav{
+    height: 36px;
+}
+main{
+    min-height: 400px;
+}
