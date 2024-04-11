@@ -107,6 +107,10 @@ main {
     padding: 16px
 }
 
+.topStories{
+    margin-bottom: 32px;
+}
+
 .menuCard h3 {
     font-size: x-large;
 }

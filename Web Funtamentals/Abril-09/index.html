@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -64,28 +65,29 @@
         <!-- Vinotinto izquierda -->
         <aside class="leftMenu">
             <!-- Gris Arriba -->
-            <div class="menuCard">
-                <h3>Top Stories</h3>
-                <hr>
-                <p> Ninjas up in 5th </p>
-                <p> Best Sport Cities </p>
-                <p> Choi joins hall of Fame </p>
-                <p> Tournament underway </p>
-                <p> Samurai at Wizards </p>
-            </div>
-            <!-- Gris en Medio -->
-            <div class="menuCard">
-                <p>Customize your DSNN</p>
-                <div class="fila spaceBetween">
-                    <button class="btnBlue">Sign In</button>
-                    <button>Sign Up</button>
+            <span>
+                <div class="menuCard topStories">
+                    <h3>Top Stories</h3>
+                    <hr>
+                    <p> Ninjas up in 5th </p>
+                    <p> Best Sport Cities </p>
+                    <p> Choi joins hall of Fame </p>
+                    <p> Tournament underway </p>
+                    <p> Samurai at Wizards </p>
                 </div>
-
-            </div>
+                <!-- Gris en Medio -->
+                <div class="menuCard">
+                    <p>Customize your DSNN</p>
+                    <div class="fila spaceBetween">
+                        <button class="btnBlue">Sign In</button>
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+            </span>
             <!-- Gris Abajo -->
             <div class="menuCard">
                 <p>Never miss a play</p>
-                <button class="btnYellow">Subscribe</button>
+                <button id="btnSubscribe" class="btnYellow">Subscribe</button>
             </div>
         </aside>
         <!-- Vinotinto derecha -->
@@ -106,7 +108,7 @@
                     <h3>San José</h3>
                     <h2>Ninjas</h2>
                     <h4>(10 w - 3 L)</h4>
-                    <h1>314</h1>
+                    <h1 class="scoreCounter">314</h1>
                 </div>
                 <!-- Celeste en Medio -->
                 <div class="vsTime">
@@ -120,18 +122,18 @@
                     <h3>Nova Scotia</h3>
                     <h2>Pirates</h2>
                     <h4>(12 w - 2 L)</h4>
-                    <h1>159</h1>
+                    <h1 class="scoreCounter">159</h1>
                 </div>
             </div>
             <hr>
             <!-- Rojo Abajo -->
             <div>
                 <p class="disclaimer">A conservative match between the two top-performin sides in the Central League
-                    Division with a number
-                    1 seed in stake... <a href="#"> get live updates</a></p>
+                    Division with a number 1 seed in stake... <a href="#"> get live updates</a></p>
             </div>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
