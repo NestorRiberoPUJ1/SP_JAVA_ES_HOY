@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
-    /*  outline: 2px dashed rgb(143, 143, 143); */
+    /* outline: 2px dashed rgb(143, 143, 143); */
     font-family: "Comic Neue", cursive;
 }
 
-body{
+body {
     width: 760px;
+    /* IMPORTANTE */
     margin: 0 auto;
+    background-color: lightgray;
 }
 
 header {
     height: 48px;
     align-items: center;
-    padding: 4px 0px;
+    padding: 4px 32px;
     box-sizing: border-box;
 }
 
@@ -26,6 +29,8 @@ nav {
 
 main {
     min-height: 400px;
+    background-color: lightgray;
+    padding: 24px 32px;
 }
 
 .fila {
@@ -54,6 +59,7 @@ main {
     transform: skew(-20deg);
     margin-right: 8px;
     padding: 0px 8px;
+    margin-left: 4px;
 }
 
 .navLinks {
@@ -81,17 +87,17 @@ main {
 }
 
 .leftMenu {
-    background-color: maroon;
     min-height: 300px;
     width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 24px;
 }
 
 .mainContent {
     min-height: 300px;
-    background-color: rgba(128, 0, 0, 0.479);
+
     flex: 1
 }
 
@@ -116,18 +122,86 @@ main {
     margin: 4px 0px;
 }
 
-.menuCard button{
+.menuCard button {
     padding: 4px 8px;
-    box-shadow: 4px 3px 0px 0px rgba(0,0,0,1);
+    box-shadow: 4px 3px 0px 0px rgba(0, 0, 0, 1);
     border: 2px solid black;
     min-width: 80px;
 }
-.btnBlue{
+
+.btnBlue {
     background-color: dodgerblue;
     color: white;
 }
-.btnYellow{
-    background-color:khaki;
+
+.btnYellow {
+    background-color: khaki;
     color: black;
     width: 100%;
+}
+
+
+.liveLabel {
+    color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.liveLabel h2 {
+    font-size: xx-large;
+}
+
+.scoreTitle {
+    flex: 1;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.redDot {
+    height: 16px;
+    width: 16px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.scoreCard {
+    width: 30%;
+}
+
+.scoreCard img {
+    width: 100%;
+}
+
+.scoreCard h1 {
+    font-size: 4rem;
+}
+
+.scoreCard h2 {
+    font-size: 2.5rem;
+}
+
+.scoreCard h3 {
+    font-size: 1.5rem;
+}
+
+.scoreCard h4 {
+    font-size: 1rem;
+}
+
+.vsTime{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+
+.vsTime h1{
+    font-size: 2.5rem;
+    margin: 48px 0px;
+}
+
+.disclaimer{
+    font-size: 1.2rem;
 }
