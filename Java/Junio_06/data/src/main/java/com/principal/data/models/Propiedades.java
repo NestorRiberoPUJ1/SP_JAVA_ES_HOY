@@ -1,21 +1,20 @@
 package com.principal.data.models;
 
 import java.util.Date;
-import java.util.List;
 
 import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -23,7 +22,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Past;
+
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -35,8 +34,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "usuarios")
-public class Usuario {
+@Table(name = "propiedades")
+public class Propiedades {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -44,40 +43,26 @@ public class Usuario {
 
     @NotNull
     @Size(min = 8, max = 8)
-    private String dni;
+    private String registro;
 
     @NotNull
     @Size(min = 2, max = 200)
-    private String nombre;
+    private String categoria;
 
     @NotNull
     @Size(min = 5, max = 200)
-    private String apellido;
+    private String direccion;
 
     @NotNull
-    @Email
-    private String email;
+    @Min((long) 1.0)
+    private Double area;
 
-    @NotNull
-    @Size(min = 9, max = 9)
-    private String telefono;
-
-    @NotNull
-    @Past
-    private Date cumpleaños;
-
-    @NotNull
-    private Boolean soltero;
-
-    @NotNull
-    @Min((long) 40.0)
-    @Max((long) 260.0)
-    private Double estatura;
 
     /* RELACIONES */
-    @JsonManagedReference
-    @OneToMany(mappedBy = "usuario", fetch = FetchType.LAZY,cascade = CascadeType.ALL)
-    private List<Propiedades> propiedades;
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 
     @Column(updatable = false)
     @DateTimeFormat(pattern = "yyyy-MM-dd")
